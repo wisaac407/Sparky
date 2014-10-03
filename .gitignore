@@ -1,3 +1,22 @@
+# Ignore automatically generated files from sass
+*.log
 .sass-cache
+
+# Ignore all node modules and bower files.
 node_modules
+bower_components
+
+# Operating system files
+.Spotlight-V100
+.Trashes
 .DS_Store
+.DS_Store?
+ehthumbs.db
+Thumbs.db
+
+# Ignore generated css and map files.
+*.css
+*.map
+
+# Ignore minifyed JavaScript files
+*.min.js
