@@ -58,7 +58,7 @@ module.exports = function(grunt) {
 			dist : {
 				files : [
 					{
-						src : ['**/*.scss', '!**/_*.scss', '!**/global.dev.*.scss'],
+						src : ['**/*.scss', '!**/_*.scss'],
 						cwd : 'assets/scss',
 						dest : 'assets/css',
 						ext : '.css',
@@ -73,9 +73,9 @@ module.exports = function(grunt) {
 			dev : {
 				files : [
 					{
-						src : ['**/*.dev.' + process.platform + '.scss'],
-						cwd : 'scss',
-						dest : 'css',
+						src : ['**/*.scss', '!**/_*.scss'],
+						cwd : 'assets/scss',
+						dest : 'assets/css',
 						ext : '.css',
 						expand : true
 					}
