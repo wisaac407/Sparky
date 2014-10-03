@@ -1,0 +1,26 @@
+{
+  "name": "Sparky",
+  "version": "0.0.1",
+  "description": "A WordPress theme build for speed and flexibility.",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [
+    "Sparky",
+    "Wordpress",
+    "Theme"
+  ],
+  "author": "Isaac Weaver",
+  "license": "GPL",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-sass": "~0.2.2",
+    "grunt-contrib-jshint": "~0.1.1", 
+    "grunt-bower-requirejs": "~0.4.1",
+    "grunt-contrib-requirejs": "~0.4.0",
+    "bower": "~0.8.6",
+    "grunt-contrib-imagemin": "~0.1.4",
+    "grunt-svgmin": "~0.1.0",
+    "grunt-contrib-watch": "~0.5.1"
+  }
+}
