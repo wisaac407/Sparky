@@ -4,3 +4,6 @@
 [submodule "lib/FontAwesome"]
 	path = lib/FontAwesome
 	url = https://github.com/FortAwesome/font-awesome-sass.git
+[submodule "lib/Isotope"]
+	path = lib/Isotope
+	url = https://github.com/metafizzy/isotope.git
