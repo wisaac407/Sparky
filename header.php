@@ -10,6 +10,14 @@
         <title><?php wp_title( '|', true, 'right' ) ?></title>
 		<meta name="author" content="">
 		<link rel="author" href="">
+		<?php if (!WP_DEBUG):?>
+		<script type="text/javascript">
+			var libs = [];
+			var define = function(mod, deps, func){libs[mod]=(func || deps)()};
+			var require = function(mods, func){func(libs[mods[0]]);};
+			require.config = function(){};
+		</script>
+		<?php endif;?>
 		<?php wp_head() ?>
     </head>
     <body <?php body_class() ?>>
