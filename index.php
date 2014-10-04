@@ -1,6 +1,8 @@
-<?php get_header() ?>
-<div id="page-content">
+<?php get_header(); ?>
+<div class="row">
+<div id="page-content" class="col-md-9">
 	<?php get_template_part('loop', 'index') ?>
 </div>
-<?php get_sidebar() ?>
-<?php get_footer() ?>
+<?php get_sidebar(); ?>
+</div>
+<?php get_footer(); ?>
