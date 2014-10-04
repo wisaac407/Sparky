@@ -37,7 +37,7 @@ module.exports = function(grunt) {
 
 		// JsHint your javascript
 		jshint : {
-			all : ['js/*.js', '!js/modernizr.js', '!js/*.min.js', '!js/vendor/**/*.js'],
+			all : ['assets/js/dev/*.js'],
 			options : {
 				browser: true,
 				curly: false,
@@ -99,9 +99,9 @@ module.exports = function(grunt) {
 			dist : {
 				options : {
 					name : 'global',
-					baseUrl : 'js',
-					mainConfigFile : 'js/global.js',
-					out : 'js/optimized.min.js'
+					baseUrl : 'assets/js/dev',
+					mainConfigFile : './assets/js/dev/global.js',
+					out : './assets/js/dist/global.js'
 				}
 			}
 		},
