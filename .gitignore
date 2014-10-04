@@ -18,5 +18,6 @@ Thumbs.db
 *.css
 *.map
 
-# Ignore minifyed JavaScript files
+# Ignore minifyed and production JavaScript files
 *.min.js
+assets/js/dist
