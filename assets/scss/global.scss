@@ -12,3 +12,18 @@
 
 //FontAwesome
 @import 'font-awesome-custom';
+
+
+#page-sidebar > ul > li {
+  @extend .list-group-item;
+  
+  list-style: none;
+  
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  
+  &:first-child {
+    border: none;
+  }
+}
