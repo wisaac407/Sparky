@@ -14,14 +14,14 @@ module.exports = function(grunt) {
 		// Watches for changes and runs tasks
 		watch : {
 			sass : {
-				files : ['scss/**/*.scss'],
+				files : ['assets/scss/**/*.scss'],
 				tasks : ['sass:dev'],
 				options : {
 					livereload : true
 				}
 			},
 			js : {
-				files : ['js/**/*.js'],
+				files : ['assets/js/**/*.js'],
 				tasks : ['jshint'],
 				options : {
 					livereload : true
