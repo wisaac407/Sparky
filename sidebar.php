@@ -1,6 +1,6 @@
-<aside id="page-sidebar">
-	<ul>
-		<?php if ( ! dynamic_sidebar( 'main-sidebar' ) ) : ?>
+<aside id="page-sidebar" class="col-md-3">
+	<ul class="">
+		<?php if ( ! dynamic_sidebar( 'sidebar' ) ) : ?>
 
 		<?php endif; ?>
 	</ul>
