@@ -13,13 +13,30 @@
 //FontAwesome
 @import 'font-awesome-custom';
 
-.menu > ul {
-  @extend .navbar-nav;
-  @extend .nav;
-}
-
+// For simplicity extend the .active Bootstrap class in the .current_page_item wordpress class
 .current_page_item {
   @extend .active;
+}
+
+// Main menu will pull to the right on all devices except phones.
+#main-menu .nav {
+  float: left;
+  @media (min-width: $screen-sm-min) {
+    float: right;
+  }
+}
+
+// CSS Hover menus. Add a '.css-hover' class to the parent element to get auto matic menu dropdowns.
+// Note that if you are using a navbar then you must add the class to the '.navbar' element.
+@media (min-width: $screen-md-min) {
+  .css-hover .dropdown:hover > .dropdown-menu {
+    top: 99%;
+    display: block;
+  }
+  .navbar-fixed-bottom.css-hover .dropdown > .dropdown-menu {
+    bottom: 99%;
+    top: auto;
+  }
 }
 
 #page-sidebar > ul > li {
