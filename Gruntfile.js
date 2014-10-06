@@ -101,7 +101,7 @@ module.exports = function(grunt) {
 					name : 'global',
 					baseUrl : 'assets/js/dev',
 					mainConfigFile : './assets/js/dev/global.js',
-					out : './assets/dist/js/global.js'
+					out : './assets/js/dist/global.js'
 				}
 			}
 		},
