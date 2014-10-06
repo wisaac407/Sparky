@@ -13,6 +13,14 @@
 //FontAwesome
 @import 'font-awesome-custom';
 
+.menu > ul {
+  @extend .navbar-nav;
+  @extend .nav;
+}
+
+.current_page_item {
+  @extend .active;
+}
 
 #page-sidebar > ul > li {
   @extend .list-group-item;
