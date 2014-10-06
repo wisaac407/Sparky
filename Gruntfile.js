@@ -67,7 +67,8 @@ module.exports = function(grunt) {
 				],
 				options : {
 					style : 'compressed',
-					precision: 10
+					precision: 10,
+					sourcemap: 'none',
 				}
 			},
 			dev : {
