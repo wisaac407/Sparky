@@ -36,12 +36,29 @@
 				</h1>
 			</div>
 		</header>
-		<div class="navbar navbar-default navbar-fixed-bottom">
-			<div class="container-fluid">
-				<?php wp_nav_menu(array(
-					'theme_location'  => 'main-nav',
-					'container'       => 'nav'
-				)) ?>
+		<!-- Begin Navbar -->
+		<div class="navbar navbar-default navbar-fixed-bottom css-hover">
+			<div class="container">
+				<div class="navbar-header">
+	      			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+	        			<span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+	      			</button>
+	      			<a class="navbar-brand" href="#"><?php bloginfo("name") ?></a>
+	    		</div>
+				<div class="navbar-collapse collapse" id="main-menu">
+					<?php wp_nav_menu(array(
+						'theme_location'  => 'main-nav',
+						'container'       => false,
+						'menu_class'      => 'navbar-nav nav',
+						'fallback_cb'     => default_nav,
+						'walker'          => new Bootstrap_Walker()
+					)) ?>
+				</div>
 			</div>
 		</div>
+		<!-- End Navbar -->
+		
 		<div id="content-wrap" class="container">
