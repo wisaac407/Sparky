@@ -6,7 +6,7 @@
 		<?php $skill_slugs = ""; $skills = explode(",", $page_skills); ?>
 
 		<?php if (sizeof($skills) > 1) : // if there is more than one skill, show the filter nav?>	
-			<ul id="filterNav" class="clearfix">
+			<ul id="filterNav" class="nav nav-tabs">
 				<li class="allBtn"><a href="#" data-filter="*" class="selected"><?php _e('All', 'themetrust'); ?></a></li>
 
 				<?php
@@ -44,8 +44,8 @@
 
 	else : // if not, use all the skills ?>
 
-		<ul id="filterNav" class="clearfix">
-			<li class="allBtn"><a href="#" data-filter="*" class="selected"><?php _e('All', 'themetrust'); ?></a></li>
+		<ul id="filterNav" class="nav nav-pills">
+			<li class="active"><a href="#" data-filter="*" class="selected"><?php _e('All', 'themetrust'); ?></a></li>
 			<?php $j=1;
 			$skills = get_terms('skill');
 			foreach ($skills as $skill) {

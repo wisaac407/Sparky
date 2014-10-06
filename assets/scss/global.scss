@@ -52,3 +52,36 @@
     border: none;
   }
 }
+
+//******************************************
+// Projects
+//******************************************
+.project {
+  display: inline-block;
+  width: 500px;
+  height: 281px;
+  position: relative;
+  
+  a {
+    img.fade {
+      opacity: 1;
+    }
+    .title.fade {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      text-align: center;
+      margin-top: -$font-size-h4 / 2;
+    }
+    
+    &:hover {
+      img.fade {
+        opacity: 0.1;
+      }
+      .title.fade {
+        opacity: 1;
+      }
+    }
+  }
+}
